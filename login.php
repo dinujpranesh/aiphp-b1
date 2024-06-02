@@ -47,17 +47,17 @@
           </div>
         </div>
       </nav>
-      <form>
+      <form action="dblogin.php" method="POST">
         <div class="card container-md text-center"  style="max-width: 400px;">
           <div class="hero-text">
           <h2 class="mt-4 mb-4 fw-light text-success-emphasis">Welcome, Back!</h2>
           <div class="mb-3">
-            <input type="email" class="form-control form-control-lg text-center fw-medium" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
+            <input type="email" name="email" class="form-control form-control-lg text-center fw-medium" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
 
           <div class="mb-3">
-            <input type="password" class="form-control form-control-lg text-center fw-medium" id="password" placeholder="Password">
+            <input type="password" name="password" class="form-control form-control-lg text-center fw-medium" id="password" placeholder="Password">
           </div>
             <div class="container text-center">
               <form style="display: inline-block;">
