@@ -31,6 +31,15 @@ if ($password !== $confirmPassword) {
 // Hash the password
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
+// Check if the email already exists in the database
+$sqlCheck = "SELECT * FROM employee WHERE email = '$email'";
+$resultCheck = $conn->query($sqlCheck);
+if ($resultCheck->num_rows > 0) {
+    echo "User Already Exists";
+    $conn->close();
+    exit();
+}
+
 // Insert the data into the employee table
 $sql = "INSERT INTO employee (email, firstname, lastname, phone, salary, dateofbirth, gender)
 VALUES ('$email', '$firstName', '$lastName', '$phone', '$salary', '$dateOfBirth', '$gender')";
