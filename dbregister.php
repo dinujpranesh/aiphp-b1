@@ -38,10 +38,11 @@ VALUES ('$email', '$firstName', '$lastName', '$phone', '$salary', '$dateOfBirth'
 
 try {
     if ($conn->query($sql) === TRUE) {
-        header('Location:register.php');
+        // Redirect to the login page
+        header("Location: login.php");
         exit();
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error inserting data: " . $conn->error;
     }
 } catch (mysqli_sql_exception $e) {
     if (strpos($e->getMessage(), 'Duplicate entry') !== false) {
