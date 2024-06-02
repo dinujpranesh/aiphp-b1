@@ -31,23 +31,26 @@ if ($password !== $confirmPassword) {
 // Hash the password
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-// Check if the email already exists in the database
-$sqlCheck = "SELECT * FROM employee WHERE email = '$email'";
-$resultCheck = $conn->query($sqlCheck);
-if ($resultCheck->num_rows > 0) {
-    echo "User Already Exists";
-    $conn->close();
-    exit();
-}
 
 // Insert the data into the employee table
 $sql = "INSERT INTO employee (email, firstname, lastname, phone, salary, dateofbirth, gender)
 VALUES ('$email', '$firstName', '$lastName', '$phone', '$salary', '$dateOfBirth', '$gender')";
 
-if ($conn->query($sql) === TRUE) {
-    echo "Data inserted successfully";
-} else {
-    echo "Error inserting data: " . $conn->error;
+try {
+    if ($conn->query($sql) === TRUE) {
+        header('Location:register.php');
+        exit();
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+} catch (mysqli_sql_exception $e) {
+    if (strpos($e->getMessage(), 'Duplicate entry') !== false) {
+        header('Location:register.php?error');
+        exit();
+
+    } else {
+        echo "Error: " . $e->getMessage();
+    }
 }
 
 $conn->close();
