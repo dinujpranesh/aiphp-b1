@@ -18,6 +18,18 @@ $phone = $_POST['Phone'];
 $salary = $_POST['Salary'];
 $dateOfBirth = $_POST['DateOfBirth'];
 $gender = $_POST['Gender'];
+$password = $_POST['Password'];
+$confirmPassword = $_POST['ConfirmPassword'];
+
+// Validate the password and confirm password
+if ($password !== $confirmPassword) {
+    echo "Passwords do not match";
+    $conn->close();
+    exit();
+}
+
+// Hash the password
+$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
 // Insert the data into the employee table
 $sql = "INSERT INTO employee (email, firstname, lastname, phone, salary, dateofbirth, gender)
