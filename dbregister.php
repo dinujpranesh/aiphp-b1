@@ -20,8 +20,8 @@ $dateOfBirth = $_POST['DateOfBirth'];
 $gender = $_POST['Gender'];
 
 // Insert the data into the employee table
-$sql = "INSERT INTO employee (email, first_name, last_name, phone, salary, date_of_birth)
-VALUES ('$email', '$firstName', '$lastName', '$phone', '$salary', '$dateOfBirth')";
+$sql = "INSERT INTO employee (email, firstname, lastname, phone, salary, dateofbirth, gender)
+VALUES ('$email', '$firstName', '$lastName', '$phone', '$salary', '$dateOfBirth', '$gender')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Data inserted successfully";
