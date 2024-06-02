@@ -17,6 +17,7 @@ $lastName = $_POST['LastName'];
 $phone = $_POST['Phone'];
 $salary = $_POST['Salary'];
 $dateOfBirth = $_POST['DateOfBirth'];
+$gender = $_POST['Gender'];
 
 // Insert the data into the employee table
 $sql = "INSERT INTO employee (email, first_name, last_name, phone, salary, date_of_birth)
