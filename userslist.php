@@ -24,6 +24,12 @@
       margin-top: 01vh;
       margin-bottom: 04vb;
     }
+    
+     .table {
+    width: 80%; /* set the desired width here */
+    margin: 0 auto;
+  }
+
     </style>
 </head>
 <body>
@@ -52,20 +58,23 @@
           </div>
         </div>
       </nav>
+      
 
+       
 
+      <table class="">
     <div class="container">
         <h1 class="hero-text mt-4">Employee Table</h1>
-        <table class="table mt-5">
+        <table class="table table-bordered border-primary mt-3">
             <thead>
                 <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                    <th>Salary</th>
-                    <th>Phone</th>
-                    <th>Date Of Birth</th>
-                    <th>Password</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Salary</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Date Of Birth</th>
+                    <th scope="col">Password</th>
                 </tr>
             </thead>
             <tbody>
@@ -101,8 +110,10 @@
                 } else {
                     echo "<tr><td colspan='7'>No data found.</td></tr>";
                 }
+                
 
                 $conn->close();
+                
                 ?>
             </tbody>
         </table>
