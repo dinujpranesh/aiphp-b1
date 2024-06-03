@@ -31,13 +31,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success-subtle rounded-3 nav-link active" aria-current="page" href="home.html">Home</a>
+                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success rounded-3 nav-link active" aria-current="page" href="home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success-subtle rounded-3 nav-link active" aria-current="page" href="Register.php">Register</a>
+                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success rounded-3 nav-link active" aria-current="page" href="Register.php">Register</a>
               </li>
               <li class="nav-item">
-                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success-subtle rounded-3 nav-link active" aria-current="page" href="login.php">Login</a>
+                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success rounded-3 nav-link active" aria-current="page" href="login.php">Login</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -53,7 +53,7 @@
           <h2 class="mt-4 mb-4 fw-light text-success-emphasis ">Let's begin the journey!</h2>
           <div class="mt-3 mb-3">
             <form action="dbregister.php" method="POST">      
-            <input type="email" onkeyup="hideAlertBox()" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-success" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Email Address">
+            <input type="email" onkeyup="hideAlertBox()" class="p-1 text-success-emphasis --bs-success-border-subtle border border-success-subtle rounded-3 form-control form-control-lg text-center fw-medium border-success" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Email Address">
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
           <div class="mb-3">

@@ -31,13 +31,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success-subtle rounded-3 nav-link active" aria-current="page" href="home.html">Home</a>
+                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success rounded-3 nav-link active" aria-current="page" href="home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success-subtle rounded-3 nav-link active" aria-current="page" href="Register.php">Register</a>
+                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success rounded-3 nav-link active" aria-current="page" href="Register.php">Register</a>
               </li>
               <li class="nav-item">
-                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success-subtle rounded-3 nav-link active" aria-current="page" href="login.php">Login</a>
+                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success rounded-3 nav-link active" aria-current="page" href="login.php">Login</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -48,7 +48,7 @@
         </div>
       </nav>
       
-        <div class="card container-md text-center border-success"  style="max-width: 400px;">
+        <div class="card container-md text-center border-primary"  style="max-width: 400px;">
           <div class="hero-text">
           <h2 class="mt-4 mb-4 fw-light text-success-emphasis">Welcome, Back!</h2>
           <form action="dblogin.php" method="POST">
@@ -58,7 +58,7 @@
         </div>
 
           <div class="mb-3">
-            <input type="password" name="password" class="form-control form-control-lg text-center fw-medium border-success" id="password" placeholder="Password">
+            <input type="password" name="password" class="form-control form-control-lg text-center fw-medium border border-success" id="password" placeholder="Password">
           </div>
             <div class="container text-center">
               <form style="display: inline-block;">
