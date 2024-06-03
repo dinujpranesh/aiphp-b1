@@ -1,6 +1,20 @@
 <?php
 session_start();
 
+// Retrieve the email and password from the form
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+
+//Handling the Admin Login to Access UsersList.php 
+if($email == "admin@gmail.com" && $password == "admin2024"){
+        $_SESSION['adminloggedin'] = true;
+        header('Location:usersList.php');
+        exit();
+    
+}
+
+
 // Connect to the database
 $servername = "localhost";
 $username = "root";
@@ -12,9 +26,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Retrieve the email and password from the form
-$email = $_POST['email'];
-$password = $_POST['password'];
 
 // Check if the user wants to log in as an admin
 if (isset($_POST['admin_login'])) {
