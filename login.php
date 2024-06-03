@@ -71,8 +71,10 @@
               <button type="submit" class="btn btn-outline-success">Let's go</button>
           
           </form>
-          <div class="text-sm text-center mt-[1.6rem]">Don’t have an account yet? <a class="text-sm text-[#7747ff]" href="#">Sign up!</a></div>
-          </div>
+          <div class="signUp-link">
+              <p>Don't have an account? <a href="Register.php"
+              class="signUpBtn-link">Register now!</a></p>
+            </div>
                 
 
             <div>
