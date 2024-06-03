@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en" lang="en" data-bs-theme="white">
   <head>
     <meta charset="utf-8">
@@ -47,48 +46,13 @@
           </div>
         </div>
       </nav>
-      
         <div class="card container-md text-center"  style="max-width: 400px;">
           <div class="hero-text">
-          <h2 class="mt-4 mb-4 fw-light text-success-emphasis">Welcome, Back!</h2>
-          <form action="dblogin.php" method="POST">
+          <h2 class="mt-4 mb-4 fw-light text-success-emphasis">Employee Dashboard</h2>
           <div class="mb-3">
-            <input type="email" name="email" class="form-control form-control-lg text-center fw-medium" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-
-          <div class="mb-3">
-            <input type="password" name="password" class="form-control form-control-lg text-center fw-medium" id="password" placeholder="Password">
-          </div>
-            <div class="container text-center">
-              <form style="display: inline-block;">
-                <!-- Other form fields -->
-
-              </div>
-              <div>
-              <a class="text-sm text-[#7747ff]" href="#">Forgot your password?
-              </a></div>
-              <button type="submit" class="btn btn-outline-success">Let's go</button>
-          
-          </form>
-          <div class="text-sm text-center mt-[1.6rem]">Don’t have an account yet? <a class="text-sm text-[#7747ff]" href="#">Sign up!</a></div>
           </div>
                 
 
             <div>
               
             </div>
-
-            
-            
-            
- 
-
-        
-
-
-            
-    
-
-</body>
-</html>
