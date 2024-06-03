@@ -76,6 +76,15 @@
                 
 
             <div>
+            <?php
+
+                if(isset($_GET['error'])) {
+                        echo('
+                <div class="alert alert-danger mt-3" role="alert">
+                  Invalid Username or Password
+               </div>'); 
+               }
+               ?>
               
             </div>
 
