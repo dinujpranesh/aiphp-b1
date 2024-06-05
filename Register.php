@@ -31,52 +31,52 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success rounded-3 nav-link active" aria-current="page" href="home.html">Home</a>
+                <a class="p-2 text-primary-emphasis --bs-primary-text-emphasis border-primary rounded-3 nav-link active" aria-current="page" href="home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success rounded-3 nav-link active" aria-current="page" href="Register.php">Register</a>
+                <a class="p-2 text-primary-emphasis --bs-primary-text-emphasis border-primary rounded-3 nav-link active" aria-current="page" href="Register.php">Register</a>
               </li>
               <li class="nav-item">
-                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success rounded-3 nav-link active" aria-current="page" href="login.php">Login</a>
+                <a class="p-2 text-primary-emphasis --bs-primary-text-emphasis border-primary rounded-3 nav-link active" aria-current="page" href="login.php">Login</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-primary" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
       
-        <div class="card container-md text-center border-success"  style="max-width: 400px;">
+        <div class="card container-md text-center border-primary"  style="max-width: 400px;">
           <div class="mb-4 hero-text">
           <h2 class="mt-4 mb-4 fw-light text-success-emphasis ">Let's begin the journey!</h2>
           <div class="mt-3 mb-3">
             <form action="dbregister.php" method="POST">      
-            <input type="email" onkeyup="hideAlertBox()" class="p-1 text-success-emphasis --bs-success-border-subtle border border-success-subtle rounded-3 form-control form-control-lg text-center fw-medium border-success" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Email Address">
+            <input type="email" onkeyup="hideAlertBox()" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Email Address">
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
           <div class="mb-3">
-            <input type="text" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-success" id="firstName" name="firstName" placeholder="First Name">
+            <input type="text" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="firstName" name="firstName" placeholder="First Name">
           </div>
           <div class="mb-3">
-            <input type="text" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-success" id="lastName" name="lastName" placeholder="Last Name">
+            <input type="text" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="lastName" name="lastName" placeholder="Last Name">
           </div>
           <div class="mb-3">
-            <input type="tel" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-success " id="phone" name="phone" placeholder="Phone">
+            <input type="tel" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary " id="phone" name="phone" placeholder="Phone">
           </div>
           <div class="mb-3">
-            <input type="text" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-success" id="salary" name="salary" placeholder="Salary">
+            <input type="text" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="salary" name="salary" placeholder="Salary">
           </div>
           <div class="mb-3">
-            <input type="date" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-success" id="dob" name="dateOfBirth" placeholder="Date of Birth">
+            <input type="date" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="dob" name="dateOfBirth" placeholder="Date of Birth">
           </div>
 
           <div class="mb-3">
-            <input type="password" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-success" id="password" name="password" placeholder="Password">
+            <input type="password" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="password" name="password" placeholder="Password">
           </div>
           <div class="mb-3">
-            <input type="password" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-success" id="confirmPassword" placeholder="Confirm Password">
+            <input type="password" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="confirmPassword" placeholder="Confirm Password">
           </div>
 
 
@@ -97,7 +97,7 @@
                   </div>
                 </div>
                 
-                <button type="submit" class="btn btn-outline-success">Register</button>
+                <button type="submit" class="btn btn-outline-primary">Register</button>
               </form>
               <?php
 
