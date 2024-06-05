@@ -52,16 +52,25 @@
           <div class="mb-4 hero-text">
           <h2 class="mt-4 mb-4 fw-light text-success-emphasis ">Let's begin the journey!</h2>
           <div class="mt-3 mb-3">
-            <form action="dbregister.php" method="POST">      
-            <input type="email" onkeyup="hideAlertBox()" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Email Address">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-          <div class="d-flex">
+            <form action="dbregister.php" method="POST"> 
+            <div class="d-flex">
           <div class="col-md-6 mb-3">
-            <input type="text" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="firstName" name="firstName" placeholder="First Name" style="margin-right: 10px;">
+            <input type="text" onkeyup="hideAlertBox()" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="firstName" name="firstName" placeholder="First Name" style="margin-right: 10px;">
           </div>
           <div class="col-md-6 mb-3">
-            <input type="text" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="lastName" name="lastName" placeholder="Last Name" style="margin-left: 02px;">
+            <input type="text" onkeyup="hideAlertBox()" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="lastName" name="lastName" placeholder="Last Name" style="margin-left: 02px;">
+          </div>
+          </div> 
+          <div class="mb-3">    
+            <input type="email" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Email Address">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="d-flex">
+        <div class="col-md-6 mb-3">
+            <input type="password" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="password" name="password" placeholder="Password" style="margin-right: 10px;">
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="password" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="confirmPassword" placeholder="Confirm Password" style="margin-left: 02px;">
           </div>
           </div>
           <div class="mb-3">
@@ -74,12 +83,7 @@
             <input type="date" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="dob" name="dateOfBirth" placeholder="Date of Birth">
           </div>
 
-          <div class="mb-3">
-            <input type="password" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="password" name="password" placeholder="Password">
-          </div>
-          <div class="mb-3">
-            <input type="password" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="confirmPassword" placeholder="Confirm Password">
-          </div>
+          
 
 
             
