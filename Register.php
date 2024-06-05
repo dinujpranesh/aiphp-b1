@@ -56,11 +56,13 @@
             <input type="email" onkeyup="hideAlertBox()" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Email Address">
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
-          <div class="mb-3">
-            <input type="text" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="firstName" name="firstName" placeholder="First Name">
+          <div class="d-flex">
+          <div class="col-md-6 mb-3">
+            <input type="text" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="firstName" name="firstName" placeholder="First Name" style="margin-right: 10px;">
           </div>
-          <div class="mb-3">
-            <input type="text" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="lastName" name="lastName" placeholder="Last Name">
+          <div class="col-md-6 mb-3">
+            <input type="text" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary" id="lastName" name="lastName" placeholder="Last Name" style="margin-left: 02px;">
+          </div>
           </div>
           <div class="mb-3">
             <input type="tel" class="p-1 rounded-3 form-control form-control-lg text-center fw-medium border-primary " id="phone" name="phone" placeholder="Phone">
