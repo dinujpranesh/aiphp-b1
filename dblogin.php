@@ -1,71 +1,61 @@
 <?php
 session_start();
 
-// Retrieve the email and password from the form
-$email = $_POST['email'];
-$password = $_POST['password'];
+// Enable error reporting
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
+$uname = $_POST['email'];
+$pass = $_POST['password'];
 
 //Handling the Admin Login to Access UsersList.php 
-if($email == "admin@gmail.com" && $password == "admin2024"){
+if($uname == "admin@gmail.com" && $pass == "admin2024"){
         $_SESSION['adminloggedin'] = true;
         header('Location:usersList.php');
         exit();
     
 }
 
+//Handling the User Login to Access Dashboard.php
 
-// Connect to the database
+// Establish a connection to the database
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "aiphp";
 
+// Prepare and execute the SQL query to fetch the user details
 $conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+$stmt = $conn->prepare("SELECT * FROM employee WHERE email = ?");
+$stmt->bind_param("s", $uname);
+$stmt->execute();
+$result = $stmt->get_result();
 
-
-// Check if the user wants to log in as an admin
-if (isset($_POST['admin_login'])) {
-    // Prepare and execute the SQL query to check the admin login details
-    $sql = "SELECT * FROM admin WHERE email = ? AND password = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $email, $password);
-    $stmt->execute();
-    $result = $stmt->get_result();
-
-    if ($result->num_rows > 0) {
-        // Admin login details are correct, redirect to the admin dashboard
-        $_SESSION['adminloggedin'] = $email;
-        header("Location: admin_dashboard.php");
-        exit();
-    } else {
-        // Admin login details are incorrect, redirect back to the login page with an error message
-        header("Location: login.php?error=1");
-        exit();
-    }
-} else {
-    // Prepare and execute the SQL query to check the user login details
-    $sql = "SELECT * FROM employee WHERE email = ? AND password = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $email, $password);
-    $stmt->execute();
-    $result = $stmt->get_result();
-
-    if ($result->num_rows > 0) {
-        // User login details are correct, redirect to the user dashboard
-        $_SESSION['userloggedin'] = $email;
+// Check if the user exists
+if ($result->num_rows === 1) {
+    $user = $result->fetch_assoc();
+    // Verify the password
+    if ($user['Password']===$pass) {
+        // Redirect to the desired page
+        $_SESSION['userloggedin'] = $uname;
         header("Location: dashboard.php");
         exit();
     } else {
-        // User login details are incorrect, redirect back to the login page with an error message
-        header("Location: login.php?error=1");
+        // Invalid password
+        header("Location: login.php?error");
         exit();
     }
+} else {
+    // Invalid email or user does not exist
+    header("Location: login.php?error");
+    exit();
 }
 
+// Close the database connection
 $stmt->close();
 $conn->close();
+
+
+
 ?>

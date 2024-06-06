@@ -90,6 +90,13 @@
               
             </div>
 
+            <script>
+             function hideAlertBox() {
+            const alertBox = document.getElementById("alertbox");
+           alertBox.style.display = "none";
+        }
+      </script>
+
             
             
             
