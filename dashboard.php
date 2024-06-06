@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['userloggedin'])) {
+        header('Location: login.php');
+        exit();
+    }
+?>
+
 <!doctype html>
 <html lang="en" lang="en" data-bs-theme="white">
   <head>
@@ -52,6 +60,19 @@
           <div class="hero-text">
           <h2 class="mt-4 mb-4 fw-light text-success-emphasis">Employee Dashboard</h2>
           <div class="mb-3">
+          <div class="row">
+          
+          
+          <a class="col-4 dash-card card p-3 rounded-5" style="width: 18rem;" href="notes/index.php">
+          <img src="img/dash/notes.png" class="card-img-top" alt="..."/>
+          <h3 class="dash-card-text">Notes App</h3>
+          </a>
+          
+        
+    </div>
+  </div>
+
+ 
           </div>
                 
 
