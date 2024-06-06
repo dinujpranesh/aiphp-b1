@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en" lang="en" data-bs-theme="white">
   <head>
     <meta charset="utf-8">
@@ -30,22 +31,23 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success-subtle rounded-3 nav-link active" aria-current="page" href="home.html">Home</a>
+                <a class="p-2 text-primary-emphasis --bs-primary-text-emphasis border-primary rounded-3 nav-link active" aria-current="page" href="home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success-subtle rounded-3 nav-link active" aria-current="page" href="Register.php">Register</a>
+                <a class="p-2 text-primary-emphasis --bs-primary-text-emphasis border-primary rounded-3 nav-link active" aria-current="page" href="Register.php">Register</a>
               </li>
               <li class="nav-item">
-                <a class="p-2 text-success-emphasis --bs-success-text-emphasis border-success-subtle rounded-3 nav-link active" aria-current="page" href="login.php">Login</a>
+                <a class="p-2 text-primary-emphasis --bs-primary-text-emphasis border-primary rounded-3 nav-link active" aria-current="page" href="login.php">Login</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-primary" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
+  
         <div class="card container-md text-center"  style="max-width: 400px;">
           <div class="hero-text">
           <h2 class="mt-4 mb-4 fw-light text-success-emphasis">Employee Dashboard</h2>
