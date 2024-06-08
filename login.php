@@ -18,6 +18,22 @@
       margin-top: 01vh;
       margin-bottom: 04vb;
     }
+    
+    .card {
+  box-sizing: border-box;
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+}
+
+
     </style>
   </head>
   <body>

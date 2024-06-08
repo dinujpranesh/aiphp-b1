@@ -28,7 +28,8 @@
      .table {
     width: 80%; /* set the desired width here */
     margin: 0 auto;
-  }
+      box-shadow: 20px 29px 82px rgba(0, 0, 0, 0.38);
+}
 
     </style>
 </head>

@@ -63,8 +63,8 @@
           <div class="row">
           
           
-          <a class="col-4 dash-card card p-3 rounded-5" style="width: 18rem;" href="notes/index.php">
-          <img src="img/dash/notes.png" class="card-img-top" alt="..."/>
+          <a class="col-4 dash-card card p-3 rounded-5" style="width: 12rem;" href="notes/index.php">
+          <img src="img/note/3.png" class="card-img-top" alt="..."/>
           <h3 class="dash-card-text">Notes App</h3>
           </a>
           
