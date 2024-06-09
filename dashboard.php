@@ -45,7 +45,7 @@
                 <a class="p-2 text-primary-emphasis --bs-primary-text-emphasis border-primary rounded-3 nav-link active" aria-current="page" href="Register.php">Register</a>
               </li>
               <li class="nav-item">
-                <a class="p-2 text-primary-emphasis --bs-primary-text-emphasis border-primary rounded-3 nav-link active" aria-current="page" href="login.php">Login</a>
+                <a class="p-2 text-primary-emphasis --bs-primary-text-emphasis border-primary rounded-3 nav-link active" aria-current="page" href="logout.php">Logout</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
